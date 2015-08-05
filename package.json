@@ -1,0 +1,27 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "Learning React with Rockford Web Devs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockfordweb/learning-react.git"
+  },
+  "keywords": [
+    "react",
+    "intro"
+  ],
+  "author": "Rockford Web Devs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rockfordweb/learning-react/issues"
+  },
+  "homepage": "https://github.com/rockfordweb/learning-react#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "react": "^0.13.3"
+  }
+}
