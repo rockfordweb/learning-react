@@ -3,16 +3,97 @@
 <head>
   <meta charset="utf-8">
   <title>Learning React with Rockford Web Devs</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/reveal/index.css">
+  <link rel="stylesheet" type="text/css" href="node_modules/reveal/theme/serif.css">
 </head>
 <body>
-  <h1>Learning React with Rockford Web Devs</h1>
+  <div class="reveal">
+    <div class="slides">
 
-  <ul>
-    <li><a href="/basics">Basics of React</a></li>
-    <li><a href="/jsx">Using JSX</a></li>
-    <li><a href="/data">Integrating external data sources</a></li>
-    <li><a href="/tooling">Tooling your workflow</a></li>
-    <li><a href="/router">Extras: React Router</a></li>
-  </ul>
+      <section>
+        <h1>Learning React</h1>
+      </section>
+
+      <section>
+        <h3>We'll be covering: </h3>
+        <ul>
+          <li class="fragment">Basics of React</li>
+          <li class="fragment">Using JSX</li>
+          <li class="fragment">Integrating external data sources</li>
+          <li class="fragment">Tooling your workflow</li>
+          <li class="fragment">Extras: React Router</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>React Basics</h2>
+      </section>
+
+      <section>
+        <h3><code>React.createClass</code></h3>
+        <h4 class="fragment">accepts an object that requires a <code>render</code> method</h4>
+        <h4 class="fragment">returns a new <code>ReactClass</code></h4>
+        <h4 class="fragment">InitialCamelCase class names</h4>
+      </section>
+
+      <section>
+        <h3><code>React.createElement</code></h3>
+        <h4 class="fragment">accepts an html tag name as a string, or a <code>ReactClass</code></h4>
+        <h4 class="fragment">takes properties object to use with html or <code>ReactClass</code> element</h4>
+        <h4 class="fragment">all other arguments are passed in as children</h4>
+        <h4 class="fragment">returns a new <code>ReactElement</code></h4>
+      </section>
+
+      <section>
+        <h3><code>React.render</code></h3>
+        <h4 class="fragment">accepts a <code>ReactElement</code></h4>
+        <h4 class="fragment">accepts a <code>DOMElement</code></h4>
+      </section>
+
+      <section>
+        <h3>Demos:</h3>
+        <ul>
+          <li class="fragment"><a href="http://jsfiddle.net/svhb43fe/"><code>createElement</code> Demo</a></li>
+          <li class="fragment"><a href="http://jsfiddle.net/d20h3m8q/2/"><code>createClass</code> Demo</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+      </section>
+
+      <section>
+        <h3><code>return (&lt;Element&gt;);</code></h3>
+      </section>
+
+      <section>
+        <h3><a href="https://jsfiddle.net/mp1yd54z/1/">JSX Demo</a></h3>
+      </section>
+
+      <section>
+        <h2>Using data</h2>
+      </section>
+
+      <section>
+        <h3><code>this.props</code></h3>
+      </section>
+
+      <section>
+        <h2>Tooling</h2>
+      </section>
+
+      <section>
+        <h2>Extras: Routing</h2>
+      </section>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="node_modules/reveal/index.js"></script>
+  <script type="text/javascript">
+    Reveal.initialize({
+      history: true
+    });
+  </script>
 </body>
 </html>
