@@ -11,7 +11,7 @@ Let’s learn a bit about it, shall we?
 + JSX
 + Integrating external data sources
 + Tooling
-+ Extras: React Router
++ Extras: Browserify
 
 
 ## License
