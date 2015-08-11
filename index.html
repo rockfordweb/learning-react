@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Learning React with Rockford Web Devs</title>
-  <link rel="stylesheet" type="text/css" href="node_modules/reveal/index.css">
-  <link rel="stylesheet" type="text/css" href="node_modules/reveal/theme/serif.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/reveal/index.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/reveal/theme/serif.css">
 </head>
 <body>
   <div class="reveal">
@@ -30,10 +30,10 @@
       </section>
 
       <section>
-        <h3><code>React.createClass</code></h3>
-        <h4 class="fragment">accepts an object that requires a <code>render</code> method</h4>
-        <h4 class="fragment">returns a new <code>ReactClass</code></h4>
-        <h4 class="fragment">InitialCamelCase class names</h4>
+        <h3><code>React.render</code></h3>
+        <h4 class="fragment">accepts a <code>ReactElement</code></h4>
+        <h4 class="fragment">accepts a <code>DOMElement</code></h4>
+        <h4 class="fragment">optionally accepts a callback</h4>
       </section>
 
       <section>
@@ -45,16 +45,17 @@
       </section>
 
       <section>
-        <h3><code>React.render</code></h3>
-        <h4 class="fragment">accepts a <code>ReactElement</code></h4>
-        <h4 class="fragment">accepts a <code>DOMElement</code></h4>
+        <h3><code>React.createClass</code></h3>
+        <h4 class="fragment">accepts an object that requires a <code>render</code> method</h4>
+        <h4 class="fragment">returns a new <code>ReactClass</code></h4>
+        <h4 class="fragment">InitialCamelCase class names</h4>
       </section>
 
       <section>
         <h3>Demos:</h3>
         <ul>
-          <li class="fragment"><a href="http://jsfiddle.net/svhb43fe/"><code>createElement</code> Demo</a></li>
-          <li class="fragment"><a href="http://jsfiddle.net/d20h3m8q/2/"><code>createClass</code> Demo</a></li>
+          <li class="fragment"><a target="_blank" href="http://jsfiddle.net/svhb43fe/"><code>createElement</code> Demo</a></li>
+          <li class="fragment"><a target="_blank" href="http://jsfiddle.net/d20h3m8q/2/"><code>createClass</code> Demo</a></li>
         </ul>
       </section>
 
@@ -63,11 +64,20 @@
       </section>
 
       <section>
-        <h3><code>return (&lt;Element&gt;);</code></h3>
+        <h3><code>return (&lt;Element /&gt;);</code></h3>
       </section>
 
       <section>
-        <h3><a href="https://jsfiddle.net/mp1yd54z/1/">JSX Demo</a></h3>
+        <h3>Gotchas:</h3>
+        <ul>
+          <li class="fragment">Always close your tags</li>
+          <li class="fragment">Only return one enclosing element</li>
+          <li class="fragment">Variables get enclosed in braces</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3><a target="_blank" href="https://jsfiddle.net/mp1yd54z/1/">JSX Demo</a></h3>
       </section>
 
       <section>
@@ -75,7 +85,21 @@
       </section>
 
       <section>
-        <h3><code>this.props</code></h3>
+        <h3><code>this.props</code> and <code>this.state</code></h3>
+      </section>
+
+      <section>
+        <h3><code>setState( newState );</code></h3>
+        <h4 class="fragment">new state may be an object or a function</h4>
+        <h4 class="fragment">function accepts two arguments, previous state and props</h4>
+      </section>
+
+      <section>
+        <h3>Demos:</h3>
+        <ul>
+          <li class="fragment"><a target="_blank" href="/data">External Data Demo</a></li>
+          <li class="fragment"><a target="_blank" href="http://codepen.io/jacobroufa/pen/oXqMaO?editors=001">Manipulating State</a></li>
+        </ul>
       </section>
 
       <section>
@@ -83,13 +107,31 @@
       </section>
 
       <section>
-        <h2>Extras: Routing</h2>
+        <h3>JSX CLI</h3>
+        <h4 class="fragment"><code>jsx inputDir outputDir</code></h4>
+      </section>
+
+      <section>
+        <h3>JSX CLI Demo</h3>
+      </section>
+
+      <section>
+        <h2>Extras: Browserify</h2>
+      </section>
+
+      <section>
+        <h3>Browserify CLI</h3>
+        <h4 class="fragment"><code>browserify input.js -o output.js</code></h4>
+      </section>
+
+      <section>
+        <h3>Browserify CLI Demo</h3>
       </section>
 
     </div>
   </div>
 
-  <script type="text/javascript" src="node_modules/reveal/index.js"></script>
+  <script type="text/javascript" src="/node_modules/reveal/index.js"></script>
   <script type="text/javascript">
     Reveal.initialize({
       history: true
