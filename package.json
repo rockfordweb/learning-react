@@ -4,7 +4,8 @@
   "description": "Learning React with Rockford Web Devs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "compile-jsx-demo": "jsx demos/jsx/src demos/jsx/dist"
   },
   "repository": {
     "type": "git",

@@ -12,7 +12,7 @@ var tweetData = require( './demos/data/tweet.js' );
 
 var app = express();
 
-var folders = ['basics', 'jsx', 'data', 'tooling', 'router'];
+var folders = ['jsx', 'data', 'extras'];
 
 app.set( 'port', ( process.env.PORT || 8000 ));
 
